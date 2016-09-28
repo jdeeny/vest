@@ -9,7 +9,7 @@
 
 START_TEST (test_bytes_required)
 {
-  fail_if( VEST_bytes_required(1) != 12, "");
+  fail_if( VEST_bytes_required(1) != 16, "Wrong number of bytes");
 }
 END_TEST
 
