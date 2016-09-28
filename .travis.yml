@@ -6,7 +6,7 @@ addons:
   apt:
     packages:
       - cmake
-      - check-devel
+      - check
 
 compiler:
   - gcc
