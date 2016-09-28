@@ -29,3 +29,6 @@ VEST_Result VEST_push(VEST_Estimator state, VEST_Data data);
 
 // Return the current velocity estimate, by performing calculations on state
 VEST_Result VEST_get_velocity(VEST_Estimator state, VEST_Data* result);
+
+// Return the total number of bytes that need to be allocated
+#define VEST_bytes_required(window_size) (sizeof(VEST_Config) + sizeof(VEST_Data) * window_size)
