@@ -120,8 +120,21 @@ velocity: cmake_check_build_system
 
 # fast build rule for target.
 velocity/fast:
-	$(MAKE) -f src/CMakeFiles/velocity.dir/build.make src/CMakeFiles/velocity.dir/build
+	$(MAKE) -f lib/CMakeFiles/velocity.dir/build.make lib/CMakeFiles/velocity.dir/build
 .PHONY : velocity/fast
+
+#=============================================================================
+# Target rules for targets named velocity-ref
+
+# Build rule for target.
+velocity-ref: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 velocity-ref
+.PHONY : velocity-ref
+
+# fast build rule for target.
+velocity-ref/fast:
+	$(MAKE) -f ref/CMakeFiles/velocity-ref.dir/build.make ref/CMakeFiles/velocity-ref.dir/build
+.PHONY : velocity-ref/fast
 
 # Help Target
 help:
@@ -132,6 +145,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... velocity"
+	@echo "... velocity-ref"
 .PHONY : help
 
 
