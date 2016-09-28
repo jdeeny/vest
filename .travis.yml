@@ -13,6 +13,5 @@ addons:
 
 script:
   - mkdir target
-  - cd target
-  - cmake .. && make
+  - cmake . && make
   - make test
