@@ -21,6 +21,8 @@ VEST_Estimator VEST_alloc(VEST_USize window_size) {
 
 VEST_Result VEST_init(VEST_Estimator state, VEST_Config config) {
   state->config = config;
+
+  return VEST_OK;
 }
 
 VEST_Result VEST_push(VEST_Estimator state, VEST_Data data) {
