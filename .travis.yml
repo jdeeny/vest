@@ -1,5 +1,13 @@
 language: c
 
+dist: trusty
+
+addons:
+  apt:
+    packages:
+      - cmake
+      - check-devel
+
 compiler:
   - gcc
   - clang
