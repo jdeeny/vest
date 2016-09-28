@@ -136,6 +136,19 @@ velocity-ref/fast:
 	$(MAKE) -f ref/CMakeFiles/velocity-ref.dir/build.make ref/CMakeFiles/velocity-ref.dir/build
 .PHONY : velocity-ref/fast
 
+#=============================================================================
+# Target rules for targets named vest-test
+
+# Build rule for target.
+vest-test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 vest-test
+.PHONY : vest-test
+
+# fast build rule for target.
+vest-test/fast:
+	$(MAKE) -f test/CMakeFiles/vest-test.dir/build.make test/CMakeFiles/vest-test.dir/build
+.PHONY : vest-test/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -146,6 +159,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... velocity"
 	@echo "... velocity-ref"
+	@echo "... vest-test"
 .PHONY : help
 
 

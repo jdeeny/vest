@@ -7,9 +7,9 @@ typedef uint32_t VEST_USize;
 typedef uint32_t VEST_Time;
 typedef uint32_t VEST_Data;
 
-enum VEST_Result {
+typedef enum {
   OK,
-};
+} VEST_Result;
 
 // Allocate memory for a VEST_VelocityEstimator
 VEST_VelocityEstimator VEST_alloc();
